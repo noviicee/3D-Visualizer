@@ -18,14 +18,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/keithclark/3d-model-element.git"
+    "url": "git+https://github.com/noviicee/Look-Into-Form.git"
   },
-  "author": "Keith Clark",
-  "license": "MIT",
+  "author": "Anamika",
+  "license": "None",
   "bugs": {
-    "url": "https://github.com/keithclark/3d-model-element/issues"
+    "url": "https://github.com/noviicee/Look-Into-Form.git"
   },
-  "homepage": "https://github.com/keithclark/3d-model-element",
+  "homepage": "https://github.com/noviicee/Look-Into-Form.git",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-minify": "^0.5.0",

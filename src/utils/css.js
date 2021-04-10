@@ -22,13 +22,6 @@ const parseOriginValue = (originString, vec3) => {
 };
 
 
-/**
- * Parses a CSS 3x2 matrix() or 4x4 matrix3d() string into its compontents and 
- * populates the passed THREE.Matrix4 with the result.
- * 
- * (https://keithclark.co.uk/articles/calculating-element-vertex-data-from-css-transforms/)
- */
-
 const parseTransformValue = (matrixString, mat4) => {
   var c = matrixString.split(/\s*[(),]\s*/).slice(1, -1);
 
