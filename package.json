@@ -1,0 +1,34 @@
+{
+  "name": "model-element",
+  "version": "1.0.2",
+  "description": "This is a experimental custom element that allows 3D objects to be loaded into a document and rendered inline, just like any other external resource. Additionally, any CSS transforms applied to a model element will be passed on to the 3D object, allowing complex objects to be placed and maniplulated using just CSS.",
+  "main": "dist/model-element.min.js",
+  "directories": {
+    "example": "examples"
+  },
+  "files": [
+    "dist/model-element.min.js"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "rollup -f iife -m -i src/index.js -o dist/model-element.js -w",
+    "build": "rollup -f iife -m -i src/index.js -o dist/model-element.js --banner \"//! 3D Model Element v$npm_package_version | (C) $npm_package_author_name | $npm_package_license | $npm_package_homepage\n\"",
+    "minify": "minify dist/model-element.js > dist/model-element.min.js",
+    "dist": "npm run build && npm run minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keithclark/3d-model-element.git"
+  },
+  "author": "Keith Clark",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/keithclark/3d-model-element/issues"
+  },
+  "homepage": "https://github.com/keithclark/3d-model-element",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-minify": "^0.5.0",
+    "rollup": "^1.13.1"
+  }
+}
