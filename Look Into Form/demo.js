@@ -1,24 +1,24 @@
 (() => {
-  var scene = document.getElementById("scene");
-  var room = document.getElementById("room");
+  const scene = document.getElementById("scene");
+  const room = document.getElementById("room");
 
-  var paused = true;
+  const paused = true;
 
-  var accel = 0.5;
-  var maxSpeed = 10;
+  const accel = 0.5;
+  const maxSpeed = 10;
 
-  var speedX = 0;
-  var speedZ = 0;
+  const speedX = 0;
+  const speedZ = 0;
 
-  var cameraPositionX = 0;
-  var cameraPositionZ = 400;
-  var cameraRotationX = 0;
-  var cameraRotationY = 0;
+  const cameraPositionX = 0;
+  const cameraPositionZ = 400;
+  const cameraRotationX = 0;
+  const cameraRotationY = 0;
 
-  var upKeyPressed = false;
-  var downKeyPressed = false;
-  var leftKeyPressed = false;
-  var rightKeyPressed = false;
+  const upKeyPressed = false;
+  const downKeyPressed = false;
+  const leftKeyPressed = false;
+  const rightKeyPressed = false;
 
   const update = () => {
     if (!paused) {
