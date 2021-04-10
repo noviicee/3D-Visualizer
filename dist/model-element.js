@@ -1,4 +1,4 @@
-//! 3D Model Element v1.0.2 | (C) Keith Clark | MIT | https://github.com/keithclark/3d-model-element
+
 
 (function () {
   'use strict';
@@ -114,13 +114,6 @@
     );
   };
 
-
-  /**
-   * Parses a CSS 3x2 matrix() or 4x4 matrix3d() string into its compontents and 
-   * populates the passed THREE.Matrix4 with the result.
-   * 
-   * (https://keithclark.co.uk/articles/calculating-element-vertex-data-from-css-transforms/)
-   */
 
   const parseTransformValue = (matrixString, mat4) => {
     var c = matrixString.split(/\s*[(),]\s*/).slice(1, -1);
